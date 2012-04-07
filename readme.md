@@ -1,7 +1,7 @@
 
 # WinLog
 
-  Windows Event Log logger for node.js [Winston](https://github.com/flatiron/winston).
+  Windows Event Log logger for node.js [Winston](https://github.com/flatiron/winston) module.
 
 ## Installation
 
