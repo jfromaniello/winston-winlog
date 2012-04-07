@@ -39,7 +39,7 @@ This transport call [eventcreate.exe](http://technet.microsoft.com/en-us/library
 
 In order to execute eventcreate.exe you need to run the application under an elevated prompt: ie administrator or system account. Windows services run with the system account so this project goes well with [WinSer](https://github.com/jfromaniello/winser).
 
-The transport will do nothing if you run it on a different platform than win32.
+The transport will do nothing if you run it on a platform other than win32.
 
 ## License 
 
