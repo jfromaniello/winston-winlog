@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ npm install winser
+    $ npm install winlog
     $ npm install winston
 
 
