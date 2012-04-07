@@ -16,5 +16,6 @@
             },
   "dependencies": {
     "winston" : "*"
-  }
+  },
+  "main": "./lib/eventlog"
 }
