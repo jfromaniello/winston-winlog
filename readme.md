@@ -1,5 +1,5 @@
 
-# WinLog
+# Windows Log transport for Winston
 
   Windows Event Log logger for node.js [Winston](https://github.com/flatiron/winston) module.
 
