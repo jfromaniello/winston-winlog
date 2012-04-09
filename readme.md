@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ npm install winlog
+    $ npm install winston-winlog
     $ npm install winston
 
 
@@ -15,7 +15,7 @@ Configure :
 
 ```js
   var winston = require('winston'),
-      winlog = require("winlog");
+      winlog = require("winston-winlog");
 
   winston.add(winlog.EventLog, { appName: 'myapp' });
   winston.setLevels(winlog.config.levels);
@@ -35,11 +35,15 @@ And you will see
 
 ## How it works
 
-This transport call [eventcreate.exe](http://technet.microsoft.com/en-us/library/bb490899.aspx) with [child_process.exec](http://nodejs.org/docs/v0.6.7/api/child_processes.html#child_process.exec). 
+This transport uses the module [windows-eventlog](https://github.com/jfromaniello/windoseventlogjs) to log events. 
 
-In order to execute eventcreate.exe you need to run the application under an elevated prompt: ie administrator or system account. Windows services run with the system account so this project goes well with [WinSer](https://github.com/jfromaniello/winser).
+In order to write entries to the eventlog your application has to run with an elevated account: ie administrator or system account. 
 
-The transport will do nothing if you run it on a platform other than win32.
+The transport will do nothing (*doesn't throw!*) if you run it on a platform other than win32.
+
+## Esta bueno, pero...
+
+The only reason to use this adapter and not windows-eventlog directly is if you are working on a multi-platform project or you are already using winston.
 
 ## License 
 
