@@ -17,7 +17,7 @@ Configure :
   var winston = require('winston'),
       winlog = require("winston-winlog");
 
-  winston.add(winlog.EventLog, { appName: 'myapp' });
+  winston.add(winlog.EventLog, { source: 'myapp' });
   winston.setLevels(winlog.config.levels);
 ```
 
@@ -32,6 +32,18 @@ Then you can do:
 And you will see
 
 ![2012-04-07_1148.png](http://joseoncodecom.ipage.com/wp-content/uploads/images/2012-04-07_1148.png)
+
+### Custom event log
+
+When adding the transport you can define a custom event log as follows:
+
+```js
+  winston.add(winlog.EventLog, { source: 'myapp', eventLog: 'MyCustomEventLog' });
+```
+
+Then you will find your logs under "Applications and Services Logs"
+
+![2012-04-20_0904.png](http://joseoncodecom.ipage.com/wp-content/uploads/images/2012-04-20_0904.png)
 
 ## How it works
 
