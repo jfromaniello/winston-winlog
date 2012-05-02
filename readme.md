@@ -47,7 +47,7 @@ Then you will find your logs under "Applications and Services Logs"
 
 ## How it works
 
-This transport uses the module [windows-eventlog](https://github.com/jfromaniello/windoseventlogjs) to log events. 
+This transport uses the module [windows-eventlog](http://jfromaniello.github.com/windowseventlogjs/) to log events. 
 
 In order to write entries to the eventlog your application has to run with an elevated account: ie administrator or system account. 
 
