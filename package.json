@@ -18,6 +18,5 @@
     "windows-eventlog" : "0.1.3"
   },
   "main": "./lib/eventlog",
-  "os" : [ "win32"],
-  "cpu": [ "ia32" ]
+  "os" : [ "win32"]
 }
