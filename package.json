@@ -1,22 +1,31 @@
 {
   "name": "winston-winlog",
   "private": false,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Windows Event Log logger for Winston",
-  "keywords": ["windows", "services", "log", "logging", "logger", "winston"],
+  "keywords": [
+    "windows",
+    "services",
+    "log",
+    "logging",
+    "logger",
+    "winston"
+  ],
   "homepage": "https://github.com/jfromaniello/winlog",
-  "author": { 
-              "name" : "Jose Fernando Romaniello", 
-              "email" : "jfromaniello@gmail.com", 
-              "url" : "http://joseoncode.com/"
-            },
+  "author": {
+    "name": "Jose Fernando Romaniello",
+    "email": "jfromaniello@gmail.com",
+    "url": "http://joseoncode.com/"
+  },
   "repository": {
-              "type" : "git", 
-              "url" : "git://github.com/jfromaniello/winlog.git"
-            },
+    "type": "git",
+    "url": "git://github.com/jfromaniello/winlog.git"
+  },
   "dependencies": {
-    "windows-eventlog" : "1.0.0"
+    "windows-eventlog": "1.0.0"
   },
   "main": "./lib/eventlog",
-  "os" : [ "win32"]
+  "os": [
+    "win32"
+  ]
 }
