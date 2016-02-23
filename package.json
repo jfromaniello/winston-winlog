@@ -23,7 +23,7 @@
     "url": "git://github.com/jfromaniello/winlog.git"
   },
   "dependencies": {
-    "windows-eventlog": "1.0.0"
+    "windows-eventlog": "2.0.0"
   },
   "main": "./lib/eventlog",
   "os": [
