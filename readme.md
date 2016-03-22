@@ -25,7 +25,7 @@ Then you can do:
 
 ```bash
   winston.info("this is an info message");
-  winston.warning("this is an warning message");
+  winston.warn("this is an warning message");
   winston.error("this is an error message");
 ```
 
